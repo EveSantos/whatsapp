@@ -18,9 +18,9 @@ export default createGlobalStyle`
     }
 
     :root {
-        --primary: #36393f;
-        --secondary: #2f3136;
-        --tertiary: rgb(32,34,37);
+        --primary: #202c33;
+        --secondary: #111b21;
+        --tertiary: #aebac1;
         --quaternary: #292b2f;
         --quinary: #393d42;
         --senary: #828386;
@@ -37,6 +37,6 @@ export default createGlobalStyle`
      
         --link: #5d80d6;
      
-        --rocketseat: #6633cc;
+        --blue: #5d80d6;
       }
 `; 

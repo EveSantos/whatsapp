@@ -6,18 +6,17 @@ import styled from 'styled-components';
 // CH CHAT HISTORY
 // FL LIST FRIENDS 
 // INPUT CHAT
-
+// @styled-icons/material-rounded/DataSaverOn
 export const Grid = styled.div`
     display: grid;
 
-    grid-template-columns: ;
-    grid-template-rows: ;
+    grid-template-columns: 450px auto;
+    grid-template-rows: 60px auto;
 
     grid-template-areas: 
     'PO PC'
     'SB CH'
-    'FL CH'
-    'FL IC';
+    'FL CH';
 
     height: 100vh;
 `
