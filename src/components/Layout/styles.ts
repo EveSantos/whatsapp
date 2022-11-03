@@ -15,7 +15,6 @@ export const Grid = styled.div`
 
     grid-template-areas: 
     'PO PC'
-    'SB CH'
     'FL CH';
 
     height: 100vh;
