@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import { AlignHorizontalRight } from '@styled-icons/material-outlined/AlignHorizontalRight'
-import { Search } from  '@styled-icons/evil/Search'
+import { Search } from '@styled-icons/evil/Search'
 
 export const Container = styled.div`    
 
@@ -10,55 +10,71 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    cursor: pointer;
 
-    background-color: var(--secondary);
-    padding: 11px 16px;
+    background-color: var(--secondary); 
   
-    max-height: 100vh;
+    max-height: 100vh;  
+    overflow-y: scroll;
+    overflow-x: hidden; 
+
+    ::-webkit-scrollbar {  
+      width: 6px!important;
+      height: 6px!important;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--scrollbar); 
+    }
+
+
+`
+
+export const  SearchContainer = styled.div` 
+
+  display: flex;
+  flex-direction: row;
+  padding-left: 0 25px;
+  margin-top: 8px;
+  align-items: center;
+  border-radius: 8px;
+
+  width: 90%;
+  height: 35px;
+  background-color: var(--primary);
 
 `
 
 export const InputWrapper = styled.div`  
 
-  width: 100%;
-  padding: 0 16px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 90%;
 
 `
 
 export const Input = styled.input`  
 
-width: 75%;
-height: 35px;
-margin: 0 15px 0 0;
+  height: 100%;
+  width: 90%;
+  border-radius: 8px;
+  background-color: var(--primary);
 
-padding: 0 10px 0 57px;
-border-radius: 8px;
-
-position: relative;
-
-background-color: var(--primary);
-color: var(--quaternary);
-
-::placeholder { 
   color: var(--quaternary);
-}
 
-˜svg{
-  position: relative;
-  top: -50%;
-  left: 14px;
-  transition: 180ms ease-in-out;
-}
+  ::placeholder { 
+    color: var(--quaternary);
+  }
 
 `
 
 export const SearchIcon = styled(Search)`
 
-width: 24px;
-height: 24px;
-
-color: var(--tertiary);
+  width: 24px;
+  height: 24px;
+  margin: 0 15px;
+  color: var(--tertiary);
 
 `
 
@@ -77,5 +93,4 @@ export const Separator = styled.div`
   border-bottom: 0.5px solid var(--tertiary);
   opacity : 0.3;
 
-  margin-bottom: 8px;
 `;

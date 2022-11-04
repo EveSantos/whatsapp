@@ -22,12 +22,14 @@ export default createGlobalStyle`
         --secondary: #111b21;
         --tertiary: #aebac1;
         --quaternary: #d1d7db;
-        --quinary: #393d42;
-        --senary: #828386;
+        --quinary: #e9edef;
+        
+        --focus-chat: #828386;
+        --hover-chat: rgb(32,44,51);
      
         --white: #fff;
         --gray: #8a8c90;
-        --chat-input: rgb(64,68,75);
+        --scrollbar: #343f46;
         --symbol: #74777a;
      
         --notification: #f84a4b;
