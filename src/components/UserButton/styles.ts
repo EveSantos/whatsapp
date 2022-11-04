@@ -12,15 +12,10 @@ export const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
-    margin-top: 8px;
 
     max-height: 100vh;
     &:hover{
       background-color: var(--hover-chat);
-    }
-
-    &:focus{
-      background-color: var(--notification);
     }
 
 `
@@ -48,7 +43,7 @@ export const InfoWrapper = styled.div`
 
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: initial;
 
 `
 export const Name = styled.h2` 
@@ -68,7 +63,6 @@ export const LastMessage = styled.p`
 export const IconMessage = styled(Check)` 
 
     width: 18px;
-    heigth: 18px;
     color: var(--gray);  
 
 `
@@ -88,7 +82,6 @@ export const Hour = styled.p`
 `
 export const Status = styled(VolumeMute)`  
     width: 14px;
-    heigth: 14px;
     color: var(--gray);  
 
 `

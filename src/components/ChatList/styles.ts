@@ -27,19 +27,17 @@ export const Container = styled.div`
       background: var(--scrollbar); 
     }
 
-
 `
 
 export const  SearchContainer = styled.div` 
 
   display: flex;
   flex-direction: row;
-  padding-left: 0 25px;
-  margin-top: 8px;
+  margin: 8px 8px 8px 0;
   align-items: center;
   border-radius: 8px;
 
-  width: 90%;
+  width: 100%;
   height: 35px;
   background-color: var(--primary);
 
@@ -48,9 +46,9 @@ export const  SearchContainer = styled.div`
 export const InputWrapper = styled.div`  
 
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
-  width: 90%;
+  width: 95%;
 
 `
 
@@ -64,7 +62,14 @@ export const Input = styled.input`
   color: var(--quaternary);
 
   ::placeholder { 
-    color: var(--quaternary);
+    color: var(--tertiary);
+    font-weight: 300;
+  }
+
+  &:focus{
+    ::placeholder{
+      visibility: hidden;
+    }
   }
 
 `
@@ -82,6 +87,7 @@ export const InputIcon = styled(AlignHorizontalRight)`
 
   width: 18px;
   height: 18px;
+  padding-right: 5px;
 
   color: var(--tertiary);
 
