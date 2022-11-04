@@ -1,4 +1,5 @@
 import React from "react";
+import ChatInfo from "../ChatInfo";
 import ChatList from "../ChatList";
 import Profile from "../Profile";
 
@@ -9,6 +10,7 @@ const Layout: React.FC = () => {
         <Grid>
             <Profile/>
             <ChatList/>
+            <ChatInfo/>
         </Grid>
     )
 }
