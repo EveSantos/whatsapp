@@ -8,7 +8,7 @@ const ChatInfo: React.FC = () => {
             <ContainerChat>
                 <Button/>
                 <InfoChat>
-                    <Name>Nome Conversa</Name>  
+                    <Name>Nome chat</Name>  
                     <Viz>visto por último às 18:32</Viz>
                 </InfoChat>
             </ContainerChat>

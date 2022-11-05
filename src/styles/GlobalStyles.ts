@@ -23,6 +23,9 @@ export default createGlobalStyle`
         --tertiary: #aebac1;
         --quaternary: #d1d7db;
         --quinary: #e9edef;
+
+        --chat: #11171a;
+        --chat-message: #2a3942;
         
         --focus-chat: #828386;
         --hover-chat: rgb(32,44,51);
